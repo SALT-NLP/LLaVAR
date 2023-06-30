@@ -31,6 +31,8 @@
 
 Model Weight Delta: [Google Drive](https://drive.google.com/drive/folders/19uEwM1VrzX_KqCzzSJAh8RqOHbf4WS5Z?usp=sharing)
 
+After merging, please add "v1" to your folder name and make sure the conversation mode "llava_v1" is used.
+
 ## Training Data
 
 Our image data is already transformed into the format of LLaVA pretraining/finetuning (They have "fake" file names in the format of CC3M and COCO). You can download them and merge them into the LLaVA training sets.
