@@ -4,7 +4,8 @@
 
 *Yanzhe Zhang, Ruiyi Zhang, Jiuxiang Gu, Yufan Zhou, Nedim Lipka, Diyi Yang, Tong Sun*
 
-[Project Page](https://llavar.github.io/) 
+[Project Page](https://llavar.github.io/)
+
 [Arxiv Link](https://arxiv.org/abs/2306.17107)
 
 ![alt text](./images/teaser.png "LLaVAR")
@@ -37,17 +38,25 @@ Our image data is already transformed into the format of LLaVA pretraining/finet
 Our instructions, on the otherhand, already contains LLaVA's instructions.
 
 Pretraining Images： [Google Drive](https://drive.google.com/file/d/1zWpqnAcaG_dUwkJJUvP9FH9zq__c-ODY/view?usp=sharing)
+
 Pretraining Instructions (585K + 422K)： [Google Drive](https://drive.google.com/file/d/1_GCHFwrPGjp-9tZlDBwVkdz-L1ymchKY/view?usp=sharing)
+
 Finetuning Images： [Google Drive](https://drive.google.com/file/d/1_GCHFwrPGjp-9tZlDBwVkdz-L1ymchKY/view?usp=sharing)
+
 Finetuning Instructions (158K + 16K): [Google Drive](https://drive.google.com/file/d/1ISdKOV1wwVkLHf5FNutctpOBa-CmNRFv/view?usp=sharing)
+
 Finetuning Instructions (158K + 20K): [Google Drive](https://drive.google.com/file/d/1NHO8lly6pUo-fdyOAyWeGiQJWRb9qggk/view?usp=sharing)
 
 
 ## Evaluation Data
 Evaluation Images： [Google Drive](https://drive.google.com/file/d/1tQQ6CX0fCH2kMuI9imrcEkYRWoVKScWX/view?usp=sharing)
+
 GPT-4 Evaluation Contexts (585K + 422K)： [File](./files/caps_laion_50_val.jsonl)
+
 GPT-4 Evaluation Rules： [Google Drive](./files/rule_read_v3.json)
+
 Questions: [Google Drive](./files/qa50_questions.jsonl)
+
 GPT-4 Answers: [Google Drive](./files/qa50_gpt4_answer.jsonl)
 
 
