@@ -41,7 +41,7 @@ Our instructions, on the other hand, already contain LLaVA's instructions.
 
 Pretraining Images： [Google Drive](https://drive.google.com/file/d/1zWpqnAcaG_dUwkJJUvP9FH9zq__c-ODY/view?usp=sharing)
 
-Pretraining Instructions (585K + 422K)： [Google Drive](https://drive.google.com/file/d/1_GCHFwrPGjp-9tZlDBwVkdz-L1ymchKY/view?usp=sharing)
+Pretraining Instructions (595K + 422K)： [Google Drive](https://drive.google.com/file/d/1_GCHFwrPGjp-9tZlDBwVkdz-L1ymchKY/view?usp=sharing)
 
 Finetuning Images： [Google Drive](https://drive.google.com/file/d/1_GCHFwrPGjp-9tZlDBwVkdz-L1ymchKY/view?usp=sharing)
 
@@ -56,7 +56,7 @@ We collect 50 instruction-following questions and answers on 50 text-rich images
 
 Evaluation Images： [Google Drive](https://drive.google.com/file/d/1tQQ6CX0fCH2kMuI9imrcEkYRWoVKScWX/view?usp=sharing)
 
-GPT-4 Evaluation Contexts (585K + 422K)： [File](./files/caps_laion_50_val.jsonl)
+GPT-4 Evaluation Contexts (595K + 422K)： [File](./files/caps_laion_50_val.jsonl)
 
 GPT-4 Evaluation Rules： [File](./files/rule_read_v3.json)
 
