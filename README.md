@@ -49,6 +49,9 @@ Finetuning Instructions (158K + 20K): [Google Drive](https://drive.google.com/fi
 
 
 ## Evaluation Data
+
+We collect 50 instruction-following questions and answers on 50 text-rich images from LAION, which can be leveraged for GPT-4-based instruction-following Evaluation.
+
 Evaluation Images： [Google Drive](https://drive.google.com/file/d/1tQQ6CX0fCH2kMuI9imrcEkYRWoVKScWX/view?usp=sharing)
 
 GPT-4 Evaluation Contexts (585K + 422K)： [File](./files/caps_laion_50_val.jsonl)
