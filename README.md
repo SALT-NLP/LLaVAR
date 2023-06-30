@@ -53,11 +53,11 @@ Evaluation Images： [Google Drive](https://drive.google.com/file/d/1tQQ6CX0fCH2
 
 GPT-4 Evaluation Contexts (585K + 422K)： [File](./files/caps_laion_50_val.jsonl)
 
-GPT-4 Evaluation Rules： [Google Drive](./files/rule_read_v3.json)
+GPT-4 Evaluation Rules： [File](./files/rule_read_v3.json)
 
-Questions: [Google Drive](./files/qa50_questions.jsonl)
+Questions: [File](./files/qa50_questions.jsonl)
 
-GPT-4 Answers: [Google Drive](./files/qa50_gpt4_answer.jsonl)
+GPT-4 Answers: [File](./files/qa50_gpt4_answer.jsonl)
 
 
 ## Training Script
@@ -160,4 +160,4 @@ python -m llava.eval.run_llava \
 
 
 ### Acknowledgement
-The code base is mainly from the LLaVA project. You can also pay attention to the recent Vicuma model update.
+The code base is mainly from the LLaVA project. You can also pay attention to the recent Vicuna model update.
