@@ -29,7 +29,7 @@
 
 ## Environment Setup
 
-**Please prepare the environment/merge the model weight following LLaVA.**
+**Please prepare the environment/merge the model weight following LLaVA-13B.**
 
 Model Weight Delta: [Google Drive](https://drive.google.com/drive/folders/19uEwM1VrzX_KqCzzSJAh8RqOHbf4WS5Z?usp=sharing)
 
