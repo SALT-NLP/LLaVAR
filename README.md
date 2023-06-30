@@ -23,19 +23,19 @@
 
 [UPDATE 06/29] Initial Release.
 
-*The main difference between our code and LLaVA's code is that we modified the training/testing/serving files to support Vicuna v1.1, which use '\</s\>' as the seperator instead of '###'.*
+*The main difference between our code and LLaVA's code is that we modified the training/testing/serving files to support Vicuna v1.1, which uses '\</s\>' as the separator instead of '###'.*
 
 ## Environment Setup
 
-**Please preprare the environment/merge the model weight following LLaVA.**
+**Please prepare the environment/merge the model weight following LLaVA.**
 
 Model Weight Delta: [Google Drive](https://drive.google.com/drive/folders/19uEwM1VrzX_KqCzzSJAh8RqOHbf4WS5Z?usp=sharing)
 
 ## Training Data
 
-Our image data is already transformed into the format of LLaVA pretraining/finetuning (They have "fake" file name in the format of CC3M and COCO), you can download them and merge them into the LLaVA training sets.
+Our image data is already transformed into the format of LLaVA pretraining/finetuning (They have "fake" file names in the format of CC3M and COCO). You can download them and merge them into the LLaVA training sets.
 
-Our instructions, on the otherhand, already contains LLaVA's instructions.
+Our instructions, on the other hand, already contain LLaVA's instructions.
 
 Pretraining Images： [Google Drive](https://drive.google.com/file/d/1zWpqnAcaG_dUwkJJUvP9FH9zq__c-ODY/view?usp=sharing)
 
@@ -161,3 +161,20 @@ python -m llava.eval.run_llava \
 
 ### Acknowledgement
 The code base is mainly from the LLaVA project. You can also pay attention to the recent Vicuna model update.
+
+```
+@article{liu2023llava,
+    author      = {Liu, Haotian and Li, Chunyuan and Wu, Qingyang and Lee, Yong Jae},
+    title       = {Visual Instruction Tuning},
+    publisher   = {arXiv:2304.08485},
+    year        = {2023}
+  }
+
+@misc{vicuna2023,
+    title = {Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90\%* ChatGPT Quality},
+    url = {https://lmsys.org/blog/2023-03-30-vicuna/},
+    author = {Chiang, Wei-Lin and Li, Zhuohan and Lin, Zi and Sheng, Ying and Wu, Zhanghao and Zhang, Hao and Zheng, Lianmin and Zhuang, Siyuan and Zhuang, Yonghao and Gonzalez, Joseph E. and Stoica, Ion and Xing, Eric P.},
+    month = {March},
+    year = {2023}
+}
+```
