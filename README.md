@@ -4,7 +4,8 @@
 
 *Yanzhe Zhang, Ruiyi Zhang, Jiuxiang Gu, Yufan Zhou, Nedim Lipka, Diyi Yang, Tong Sun*
 
-[Project Page](https://llavar.github.io/) 
+[Project Page](https://llavar.github.io/)
+
 [Arxiv Link](https://arxiv.org/abs/2306.17107)
 
 ![alt text](./images/teaser.png "LLaVAR")
@@ -22,33 +23,44 @@
 
 [UPDATE 06/29] Initial Release.
 
-*The main difference between our code and LLaVA's code is that we modified the training/testing/serving files to support Vicuna v1.1, which use '\</s\>' as the seperator instead of '###'.*
+*The main difference between our code and LLaVA's code is that we modified the training/testing/serving files to support Vicuna v1.1, which uses '\</s\>' as the separator instead of '###'.*
 
 ## Environment Setup
 
-**Please preprare the environment/merge the model weight following LLaVA.**
+**Please prepare the environment/merge the model weight following LLaVA.**
 
 Model Weight Delta: [Google Drive](https://drive.google.com/drive/folders/19uEwM1VrzX_KqCzzSJAh8RqOHbf4WS5Z?usp=sharing)
 
 ## Training Data
 
-Our image data is already transformed into the format of LLaVA pretraining/finetuning (They have "fake" file name in the format of CC3M and COCO), you can download them and merge them into the LLaVA training sets.
+Our image data is already transformed into the format of LLaVA pretraining/finetuning (They have "fake" file names in the format of CC3M and COCO). You can download them and merge them into the LLaVA training sets.
 
-Our instructions, on the otherhand, already contains LLaVA's instructions.
+Our instructions, on the other hand, already contain LLaVA's instructions.
 
 Pretraining Images： [Google Drive](https://drive.google.com/file/d/1zWpqnAcaG_dUwkJJUvP9FH9zq__c-ODY/view?usp=sharing)
+
 Pretraining Instructions (585K + 422K)： [Google Drive](https://drive.google.com/file/d/1_GCHFwrPGjp-9tZlDBwVkdz-L1ymchKY/view?usp=sharing)
+
 Finetuning Images： [Google Drive](https://drive.google.com/file/d/1_GCHFwrPGjp-9tZlDBwVkdz-L1ymchKY/view?usp=sharing)
+
 Finetuning Instructions (158K + 16K): [Google Drive](https://drive.google.com/file/d/1ISdKOV1wwVkLHf5FNutctpOBa-CmNRFv/view?usp=sharing)
+
 Finetuning Instructions (158K + 20K): [Google Drive](https://drive.google.com/file/d/1NHO8lly6pUo-fdyOAyWeGiQJWRb9qggk/view?usp=sharing)
 
 
 ## Evaluation Data
+
+We collect 50 instruction-following questions and answers on 50 text-rich images from LAION, which can be leveraged for GPT-4-based instruction-following Evaluation.
+
 Evaluation Images： [Google Drive](https://drive.google.com/file/d/1tQQ6CX0fCH2kMuI9imrcEkYRWoVKScWX/view?usp=sharing)
+
 GPT-4 Evaluation Contexts (585K + 422K)： [File](./files/caps_laion_50_val.jsonl)
-GPT-4 Evaluation Rules： [Google Drive](./files/rule_read_v3.json)
-Questions: [Google Drive](./files/qa50_questions.jsonl)
-GPT-4 Answers: [Google Drive](./files/qa50_gpt4_answer.jsonl)
+
+GPT-4 Evaluation Rules： [File](./files/rule_read_v3.json)
+
+Questions: [File](./files/qa50_questions.jsonl)
+
+GPT-4 Answers: [File](./files/qa50_gpt4_answer.jsonl)
 
 
 ## Training Script
@@ -151,4 +163,21 @@ python -m llava.eval.run_llava \
 
 
 ### Acknowledgement
-The code base is mainly from the LLaVA project. You can also pay attention to the recent Vicuma model update.
+The code base is mainly from the LLaVA project. You can also pay attention to the recent Vicuna model update.
+
+```
+@article{liu2023llava,
+    author      = {Liu, Haotian and Li, Chunyuan and Wu, Qingyang and Lee, Yong Jae},
+    title       = {Visual Instruction Tuning},
+    publisher   = {arXiv:2304.08485},
+    year        = {2023}
+  }
+
+@misc{vicuna2023,
+    title = {Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90\%* ChatGPT Quality},
+    url = {https://lmsys.org/blog/2023-03-30-vicuna/},
+    author = {Chiang, Wei-Lin and Li, Zhuohan and Lin, Zi and Sheng, Ying and Wu, Zhanghao and Zhang, Hao and Zheng, Lianmin and Zhuang, Siyuan and Zhuang, Yonghao and Gonzalez, Joseph E. and Stoica, Ion and Xing, Eric P.},
+    month = {March},
+    year = {2023}
+}
+```
