@@ -145,6 +145,8 @@ torchrun --nnodes=1 --nproc_per_node=8 --master_port=25001 \
     --report_to wandb
 ```
 
+## Evaluation Script
+
 Instruction-following on COCO images.
 
 ```
@@ -167,9 +169,13 @@ python -m llava.eval.run_llava \
     --query "Who starred in the movie?"
 ```
 
+For text-based VQA (from [MultimodalOCR](https://github.com/Yuliang-Liu/MultimodalOCR)), you can put the `Eval_LLaVAR.py` in `/path/to/MultimodalOCR/models/LLaVA/` and add our model to `/path/to/MultimodalOCR/eval.py` for evaluation.
+
 
 ### Acknowledgement
-The code base is mainly from the LLaVA project. You can also pay attention to the recent Vicuna model update.
+The code base is mainly from the [LLaVA](https://github.com/Yuliang-Liu/MultimodalOCR) project. Our evaluation is also built on the [MultimodalOCR](https://github.com/Yuliang-Liu/MultimodalOCR) project. 
+
+For better language decoder, you can also pay attention to the recent Vicuna model update.
 
 ```
 @article{liu2023llava,
@@ -177,7 +183,16 @@ The code base is mainly from the LLaVA project. You can also pay attention to th
     title       = {Visual Instruction Tuning},
     publisher   = {arXiv:2304.08485},
     year        = {2023}
-  }
+}
+
+@misc{liu2023hidden,
+    title={On the Hidden Mystery of OCR in Large Multimodal Models},
+    author={Yuliang Liu and Zhang Li and Hongliang Li and Wenwen Yu and Yang Liu and Biao Yang and Mingxin Huang and Dezhi Peng and Mingyu Liu and Mingrui Chen and Chunyuan Li and Xucheng Yin and Cheng-lin Liu and Lianwen Jin and Xiang Bai},
+    year={2023},
+    eprint={2305.07895},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
 
 @misc{vicuna2023,
     title = {Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90\%* ChatGPT Quality},
