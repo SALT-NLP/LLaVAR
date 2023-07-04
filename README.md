@@ -13,11 +13,13 @@
 ![alt text](./images/teaser.png "LLaVAR")
 
 ```
-@article{zhang2023llavar,
-      title={LLaVAR: Enhanced Visual Instruction Tuning for Text-Rich Image Understanding}, 
-      author={Yanzhe Zhang and Ruiyi Zhang and Jiuxiang Gu and Yufan Zhou and Nedim Lipka and Diyi Yang and Tong Sun},
-      year={2023},
-      publisher={arXiv: 2306.17107}
+@misc{zhang2023llavar,
+    title={LLaVAR: Enhanced Visual Instruction Tuning for Text-Rich Image Understanding},
+    author={Yanzhe Zhang and Ruiyi Zhang and Jiuxiang Gu and Yufan Zhou and Nedim Lipka and Diyi Yang and Tong Sun},
+    year={2023},
+    eprint={2306.17107},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
 ```
 
