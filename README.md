@@ -22,6 +22,7 @@
     primaryClass={cs.CV}
 }
 ```
+[UPDATE 07/05] Model Weight Delta on Huggingface :hugs:.
 
 [UPDATE 06/29] Initial Release.
 
@@ -31,7 +32,7 @@
 
 **Please prepare the environment/merge the model weight following LLaVA.**
 
-Model Weight Delta: [Google Drive](https://drive.google.com/drive/folders/19uEwM1VrzX_KqCzzSJAh8RqOHbf4WS5Z?usp=sharing)
+Model Weight Delta: [Google Drive](https://drive.google.com/drive/folders/19uEwM1VrzX_KqCzzSJAh8RqOHbf4WS5Z?usp=sharing), [Huggingface](https://huggingface.co/SALT-NLP/LLaVAR_delta/tree/main)
 
 This should be merged with LLaMA-13B.
 
