@@ -20,7 +20,7 @@ import hashlib
 
 logger = build_logger("gradio_web_server", "gradio_web_server.log")
 
-headers = {"User-Agent": "LLaVA Client"}
+headers = {"User-Agent": "LLaVAR Client"}
 
 no_change_btn = gr.Button.update()
 enable_btn = gr.Button.update(interactive=True)
@@ -187,7 +187,7 @@ def http_bot(state, model_selector, temperature, max_new_tokens, request: gr.Req
     if len(state.messages) == state.offset + 2:
         # First round of conversation
         if "llava" in model_name.lower():
-            if "v1" in model_name.lower():
+            if "v1" in model_name.lower() or "llavar" in model_name.lower():
                 template_name = "llava_v1"
             elif "mpt" in model_name.lower():
                 template_name = "mpt_multimodal"
@@ -201,6 +201,7 @@ def http_bot(state, model_selector, temperature, max_new_tokens, request: gr.Req
             template_name = "vicuna_v1_1"
         else:
             template_name = "v1"
+        print(template_name)
         new_state = conv_templates[template_name].copy()
         new_state.append_message(new_state.roles[0], state.messages[-2][1])
         new_state.append_message(new_state.roles[1], None)
@@ -290,12 +291,12 @@ def http_bot(state, model_selector, temperature, max_new_tokens, request: gr.Req
         fout.write(json.dumps(data) + "\n")
 
 title_markdown = ("""
-# 🌋 LLaVA: Large Language and Vision Assistant
-[[Project Page]](https://llava-vl.github.io) [[Paper]](https://arxiv.org/abs/2304.08485) [[Code]](https://github.com/haotian-liu/LLaVA) [[Model]](https://huggingface.co/liuhaotian/LLaVA-13b-delta-v0)
+# LLaVAR: Enhanced Visual Instruction Tuning for Text-rich Image Understanding
+[[Project Page]](https://llavar.github.io/) [[Paper]](https://arxiv.org/abs/2306.17107) [[Code]](https://github.com/SALT-NLP/LLaVAR) [[Model]](https://drive.google.com/drive/folders/19uEwM1VrzX_KqCzzSJAh8RqOHbf4WS5Z?usp=sharing)
 """)
 
 tos_markdown = ("""
-### Terms of use
+### Terms of use (from LLaVA)
 By using this service, users are required to agree to the following terms:
 The service is a research preview intended for non-commercial use only. It only provides limited safety measures and may generate offensive content. It must not be used for any illegal, harmful, violent, racist, or sexual purposes. The service may collect user dialogue data for future research.
 Please click the "Flag" button if you get any inappropriate answer! We will collect those to keep improving our moderator.
@@ -346,16 +347,16 @@ def build_demo(embed_mode):
 
                 cur_dir = os.path.dirname(os.path.abspath(__file__))
                 gr.Examples(examples=[
-                    [f"{cur_dir}/examples/extreme_ironing.jpg", "What is unusual about this image?"],
-                    [f"{cur_dir}/examples/waterview.jpg", "What are the things I should be cautious about when I visit here?"],
+                    [f"{cur_dir}/examples/gatech_post.jpg", "If I want to study optimization, is Georgia Tech a good place for me? What if I want to study art?"],
+                    [f"{cur_dir}/examples/read.png", " Based on the title and the image on the cover, what can be inferred about the content of \"Bo\'s Lasting Lessons\" and its potential target audience?"],
                 ], inputs=[imagebox, textbox])
 
                 with gr.Accordion("Parameters", open=False, visible=False) as parameter_row:
-                    temperature = gr.Slider(minimum=0.0, maximum=1.0, value=0.2, step=0.1, interactive=True, label="Temperature",)
+                    temperature = gr.Slider(minimum=0.0, maximum=1.0, value=0.5, step=0.1, interactive=True, label="Temperature",)
                     max_output_tokens = gr.Slider(minimum=0, maximum=1024, value=512, step=64, interactive=True, label="Max output tokens",)
 
             with gr.Column(scale=6):
-                chatbot = grChatbot(elem_id="chatbot", label="LLaVA Chatbot", visible=False).style(height=550)
+                chatbot = grChatbot(elem_id="chatbot", label="LLaVAR Chatbot", visible=False).style(height=550)
                 with gr.Row():
                     with gr.Column(scale=8):
                         textbox.render()
