@@ -22,7 +22,10 @@
     primaryClass={cs.CV}
 }
 ```
-[UPDATE 07/05] Model Weight Delta on Huggingface :hugs:.
+
+[UPDATE 07/05] Data available on [Huggingface :hugs:](https://huggingface.co/datasets/SALT-NLP/LLaVAR).
+
+[UPDATE 07/05] Model Weight Delta on [Huggingface :hugs:](https://huggingface.co/SALT-NLP/LLaVAR_delta/tree/main).
 
 [UPDATE 06/29] Initial Release.
 
@@ -38,7 +41,7 @@ This should be merged with LLaMA-13B.
 
 After merging, please add "v1" to your folder name and make sure the conversation mode "llava_v1" is used.
 
-## Training Data
+## Training Data ([Huggingface](https://huggingface.co/datasets/SALT-NLP/LLaVAR))
 
 Our image data is already transformed into the format of LLaVA pretraining/finetuning (They have "fake" file names in the format of CC3M and COCO). You can download them and merge them into the LLaVA training sets.
 
@@ -55,7 +58,7 @@ Finetuning Instructions (158K + 16K): [Google Drive](https://drive.google.com/fi
 Finetuning Instructions (158K + 20K): [Google Drive](https://drive.google.com/file/d/1NHO8lly6pUo-fdyOAyWeGiQJWRb9qggk/view?usp=sharing)
 
 
-## Evaluation Data
+## Evaluation Data ([Huggingface](https://huggingface.co/datasets/SALT-NLP/LLaVAR))
 
 We collect 50 instruction-following questions and answers on 50 text-rich images from LAION, which can be leveraged for GPT-4-based instruction-following Evaluation.
 
