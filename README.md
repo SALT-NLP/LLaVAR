@@ -175,7 +175,7 @@ python -m llava.eval.run_llava \
     --query "Who starred in the movie?"
 ```
 
-For text-based VQA (from [MultimodalOCR](https://github.com/Yuliang-Liu/MultimodalOCR)), you can put the `Eval_LLaVAR.py` in `/path/to/MultimodalOCR/models/LLaVA/` and add our model to `/path/to/MultimodalOCR/eval.py` for evaluation.
+For text-based VQA (from [MultimodalOCR](https://github.com/Yuliang-Liu/MultimodalOCR)), you can put the `MultimodalOCR/Eval_LLaVAR.py` in `/path/to/MultimodalOCR/models/LLaVA/` and add our model to `/path/to/MultimodalOCR/eval.py` for evaluation.
 
 
 ### Acknowledgement
