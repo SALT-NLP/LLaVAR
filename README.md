@@ -23,7 +23,7 @@
 }
 ```
 
-[UPDATE 07/12] Release the OCR evaluation results/script on the [MME](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation) benchmark. LLaVAR increase the OCR score of LLaVA from 50 to 80.
+[UPDATE 07/12] Release the OCR evaluation results/script on the [MME](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation) benchmark. LLaVAR increases the OCR score of LLaVA from 50 to 80.
 
 [UPDATE 07/05] Data available on [Huggingface :hugs:](https://huggingface.co/datasets/SALT-NLP/LLaVAR).
 
