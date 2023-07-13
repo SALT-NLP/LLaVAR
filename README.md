@@ -62,7 +62,7 @@ Finetuning Instructions (158K + 20K): [Google Drive](https://drive.google.com/fi
 
 ## Evaluation Data ([Huggingface](https://huggingface.co/datasets/SALT-NLP/LLaVAR))
 
-We collect 50 instruction-following questions and answers on 50 text-rich images from LAION, which can be leveraged for GPT-4-based instruction-following Evaluation.
+We collect 50 instruction-following questions and answers on 50 text-rich images from LAION, which can be leveraged for [GPT-4-based instruction-following Evaluation](https://github.com/haotian-liu/LLaVA#gpt-assisted-evaluation).
 
 Evaluation Images： [Google Drive](https://drive.google.com/file/d/1tQQ6CX0fCH2kMuI9imrcEkYRWoVKScWX/view?usp=sharing)
 
@@ -82,7 +82,7 @@ You should merge our pretraining images into the cc3m folder.
 
 ```Shell
 torchrun --nnodes=1 --nproc_per_node=8 --master_port=25001 \
-   /sensei-fs/users/yanzhez/LLaVA/llava/train/train_mem.py \
+   /path/to/LLaVA/llava/train/train_mem.py \
     --model_name_or_path /path/to/models/vicuna_13b_v1_1 \
     --data_path /path/to/chat_llavar.json \
     --image_folder /path/to/cc3m \
@@ -118,7 +118,7 @@ You should merge our finetuning images into the coco2017 folder.
 
 ```Shell
 torchrun --nnodes=1 --nproc_per_node=8 --master_port=25001 \
-    /sensei-fs/users/yanzhez/LLaVA/llava/train/train_mem.py \
+    /path/to/LLaVA/llava/train/train_mem.py \
     --model_name_or_path /path/to/models/vicuna_13b_v1_1 \
     --data_path /path/to/llava_instruct_150k_llavar_16k.json \
     --image_folder /path/to/coco/images/train2017 \
