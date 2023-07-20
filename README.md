@@ -179,7 +179,7 @@ For text-based VQA (from [MultimodalOCR](https://github.com/Yuliang-Liu/Multimod
 
 
 ### Acknowledgement
-The code base is mainly from the [LLaVA](https://github.com/Yuliang-Liu/MultimodalOCR) project. Our evaluation is also built on the [MultimodalOCR](https://github.com/Yuliang-Liu/MultimodalOCR) project. 
+The code base is mainly from the [LLaVA](https://github.com/haotian-liu/LLaVA) project. Our evaluation is also built on the [MultimodalOCR](https://github.com/Yuliang-Liu/MultimodalOCR) project. 
 
 For better language decoder, you can also pay attention to the recent Vicuna model update.
 
