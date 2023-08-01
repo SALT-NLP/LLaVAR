@@ -8,7 +8,7 @@
 
 [Arxiv Link](https://arxiv.org/abs/2306.17107)
 
-[Demo](https://91a272cd67d6145ce1.gradio.live)
+[Demo](https://50c07d47062dc0cc5a.gradio.live)
 
 ![alt text](./images/teaser.png "LLaVAR")
 
