@@ -22,6 +22,8 @@
     primaryClass={cs.CV}
 }
 ```
+[UPDATE 08/01] Check out the ready-to-use [model checkpoint](https://huggingface.co/truehealth/LLaVar) and [finetuning dataset](https://huggingface.co/datasets/HuggingFaceM4/LLaVAR-Instruct-16K) from the community on Huggingface!
+
 [UPDATE 07/21] Release the metadata of used LAION images: [pretrain](https://huggingface.co/datasets/SALT-NLP/LLaVAR/blob/main/pretrain_meta.json)/[finetune](https://huggingface.co/datasets/SALT-NLP/LLaVAR/blob/main/finetune_meta.json).
 
 [UPDATE 07/12] Release the OCR evaluation results/script on the [MME](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation) benchmark. LLaVAR increases the OCR score of LLaVA from 50 to 80.
